@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gallery | Azure Haven Hotel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html">
+          Azure
+          <span>Haven</span>
+        </a>
+        <button class="menu-btn" aria-label="Open menu">&#9776;</button>
+        <nav id="nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html" class="active">Gallery</a>
+          <a class="btn btn-sm" href="booking.html">Book a room</a>
+        </nav>
+      </div>
+    </header>
+    <div class="page-hero">
+      <div class="container">
+        <h1>Gallery</h1>
+        <p>A look around Azure Haven</p>
+      </div>
+    </div>
+    <section>
+      <div class="container">
+        <div class="filters">
+          <button class="on" data-filter="all">All</button>
+          <button data-filter="rooms">Rooms</button>
+          <button data-filter="dining">Dining</button>
+          <button data-filter="outdoors">Outdoors</button>
+        </div>
+        <div class="gallery">
+          <div class="g-item" data-cat="rooms">
+            <img src="images/IMG_3230.JPG" alt="Deluxe bedroom" onerror="this.remove()" />
+            <span>Deluxe bedroom</span>
+          </div>
+          <div class="g-item" data-cat="dining">
+            <img src="images/IMG_3232.JPG" alt="Dining room" onerror="this.remove()" />
+            <span>Dining room</span>
+          </div>
+          <div class="g-item" data-cat="outdoors">
+            <img src="images/IMG_3234.JPG" alt="Pool area" onerror="this.remove()" />
+            <span>Pool area</span>
+          </div>
+          <div class="g-item" data-cat="rooms">
+            <img src="images/IMG_3231.JPG" alt="Executive suite" onerror="this.remove()" />
+            <span>Executive suite</span>
+          </div>
+          <div class="g-item" data-cat="outdoors">
+            <img src="images/IMG_3235.JPG" alt="Front entrance" onerror="this.remove()" />
+            <span>Front entrance</span>
+          </div>
+          <div class="g-item" data-cat="dining">
+            <img src="images/IMG_3236.JPG" alt="Breakfast buffet" onerror="this.remove()" />
+            <span>Breakfast buffet</span>
+          </div>
+          <div class="g-item" data-cat="rooms">
+            <img src="images/IMG_3238.JPG" alt="Bathroom" onerror="this.remove()" />
+            <span>Bathroom</span>
+          </div>
+          <div class="g-item" data-cat="outdoors">
+            <img src="images/IMG_3237.JPG" alt="Garden" onerror="this.remove()" />
+            <span>Garden</span>
+          </div>
+        </div>
+        <p class="center">
+          Add your photos to the
+          <strong>images</strong>
+          folder using the file names gallery1.jpg to gallery8.jpg.
+        </p>
+      </div>
+    </section>
+    <div class="lightbox" id="lightbox">
+      <button aria-label="Close">&times;</button>
+      <img alt="" />
+    </div>
+    <footer>
+      <div class="container">
+        <div class="foot">
+          <div>
+            <h3>Azure Haven Hotel</h3>
+            <p>Comfortable rooms, warm service and a calm place to rest.</p>
+          </div>
+          <div>
+            <h3>Visit</h3>
+            <p>12 Your Street, Your City</p>
+            <p>+000 000 000 0000</p>
+            <p>hello@azurehaven.com</p>
+          </div>
+          <div>
+            <h3>Pages</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="booking.html">Book a room</a>
+          </div>
+        </div>
+        <div class="copy">
+          &copy;
+          <span id="year"></span>
+          Azure Haven Hotel. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

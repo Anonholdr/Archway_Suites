@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Book a room | Azure Haven Hotel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html">
+          Azure
+          <span>Haven</span>
+        </a>
+        <button class="menu-btn" aria-label="Open menu">&#9776;</button>
+        <nav id="nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a class="btn btn-sm" href="booking.html">Book a room</a>
+        </nav>
+      </div>
+    </header>
+    <div class="page-hero">
+      <div class="container">
+        <h1>Book your stay</h1>
+        <p>Takes about a minute. Pay at the hotel.</p>
+      </div>
+    </div>
+    <section>
+      <div class="container">
+        <div class="form-wrap">
+          <form id="bookingForm" novalidate>
+            <div class="fields">
+              <div class="field">
+                <label for="name">Full name</label>
+                <input id="name" required autocomplete="name" />
+                <span class="err"></span>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" type="email" required autocomplete="email" />
+                <span class="err"></span>
+              </div>
+              <div class="field">
+                <label for="phone">Phone number</label>
+                <input id="phone" type="tel" required autocomplete="tel" />
+                <span class="err"></span>
+              </div>
+              <div class="field">
+                <label for="idType">ID you will bring</label>
+                <select id="idType" required>
+                  <option value="">Choose one</option>
+                  <option>National ID</option>
+                  <option>Passport</option>
+                  <option>Driver's licence</option>
+                </select>
+                <span class="err"></span>
+              </div>
+              <div class="field">
+                <label for="checkin">Check-in date</label>
+                <input id="checkin" type="date" class="date-in" required />
+                <span class="err"></span>
+              </div>
+              <div class="field">
+                <label for="checkout">Check-out date</label>
+                <input id="checkout" type="date" class="date-out" required />
+                <span class="err"></span>
+              </div>
+              <div class="field">
+                <label for="room">Room type</label>
+                <select id="room" required>
+                  <option value="">Choose a room</option>
+                  <option>Standard Room</option>
+                  <option>Deluxe Room</option>
+                  <option>Executive Suite</option>
+                </select>
+                <span class="err"></span>
+              </div>
+              <div class="field">
+                <label for="guests">Guests</label>
+                <select id="guests">
+                  <option>1</option>
+                  <option selected>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <span class="err"></span>
+              </div>
+              <div class="field">
+                <label for="arrival">Expected arrival time</label>
+                <input id="arrival" type="time" value="14:00" />
+                <span class="err"></span>
+              </div>
+              <div class="field">
+                <label for="rooms">Number of rooms</label>
+                <select id="rooms">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <span class="err"></span>
+              </div>
+              <div class="field full">
+                <label for="requests">Special requests (optional)</label>
+                <textarea
+                  id="requests"
+                  rows="3"
+                  placeholder="Late arrival, extra bed, airport pick-up..."
+                ></textarea>
+              </div>
+            </div>
+            <p class="summary" id="summary"></p>
+            <div class="note">
+              You do not pay online. Payment is made at the hotel front desk when you arrive.
+            </div>
+            <button class="btn btn-dark" type="submit">Confirm booking</button>
+          </form>
+
+          <div class="confirm" id="confirm">
+            <div class="tick">&#10003;</div>
+            <h2>Booking received</h2>
+            <p>Show this reference at the front desk when you arrive.</p>
+            <div class="ref" id="ref"></div>
+            <div class="details" id="details"></div>
+            <button class="btn" id="again" type="button">Make another booking</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="foot">
+          <div>
+            <h3>Azure Haven Hotel</h3>
+            <p>Comfortable rooms, warm service and a calm place to rest.</p>
+          </div>
+          <div>
+            <h3>Visit</h3>
+            <p>12 Your Street, Your City</p>
+            <p>+000 000 000 0000</p>
+            <p>hello@azurehaven.com</p>
+          </div>
+          <div>
+            <h3>Pages</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="booking.html">Book a room</a>
+          </div>
+        </div>
+        <div class="copy">
+          &copy;
+          <span id="year"></span>
+          Azure Haven Hotel. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

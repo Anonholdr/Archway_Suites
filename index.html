@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Home | Azure Haven Hotel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="index.html">
+          Archway
+          <span>Suites</span>
+        </a>
+        <button class="menu-btn" aria-label="Open menu">&#9776;</button>
+        <nav id="nav">
+          <a href="index.html" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="gallery.html">Gallery</a>
+          <a class="btn btn-sm" href="booking.html">Book a room</a>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <h1>
+          Rest easy.
+          <br />
+          <em>Arrive,</em>
+          check in, relax.
+        </h1>
+        <p>
+          Clean, quiet rooms and friendly staff. Book online in a minute and pay when you arrive at
+          the hotel.
+        </p>
+        <div class="actions">
+          <a class="btn btn-light" href="booking.html">Book a room</a>
+          <a class="btn btn-ghost" href="gallery.html">See the hotel</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick">
+      <div class="container">
+        <form action="booking.html" method="get">
+          <div class="field">
+            <label for="q1">Check-in</label>
+            <input type="date" id="q1" name="in" class="date-in" />
+          </div>
+          <div class="field">
+            <label for="q2">Check-out</label>
+            <input type="date" id="q2" name="out" class="date-out" />
+          </div>
+          <div class="field">
+            <label for="q3">Guests</label>
+            <select id="q3" name="guests">
+              <option>1</option>
+              <option selected>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+          <button class="btn" type="submit">Start booking</button>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <div class="container center reveal">
+        <h2>Our rooms</h2>
+        <p>
+          Pick the room that fits your stay. Every room has Wi-Fi, air conditioning and a private
+          bathroom.
+        </p>
+        <div class="grid g3">
+          <article class="card">
+            <div class="thumb">
+              <img src="images/IMG_3229.JPG" alt="Standard room" onerror="this.remove()" />
+            </div>
+            <div class="body">
+              <h3>Standard Room</h3>
+              <p>A cosy room for one or two guests with a queen bed and work desk.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb">
+              <img src="images/IMG_3230.JPG" alt="Deluxe room" onerror="this.remove()" />
+            </div>
+            <div class="body">
+              <h3>Deluxe Room</h3>
+              <p>More space, a king bed, a sitting corner and a view of the garden.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="thumb">
+              <img src="images/IMG_3231.JPG" alt="Executive suite" onerror="this.remove()" />
+            </div>
+            <div class="body">
+              <h3>Executive Suite</h3>
+              <p>A separate living area and bedroom, ideal for families or longer stays.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tint">
+      <div class="container center reveal">
+        <h2>Why guests stay with us</h2>
+        <div class="grid g3">
+          <div class="feature">
+            <h3>Pay at the hotel</h3>
+            <p>No card needed online. Settle your bill at the front desk when you arrive.</p>
+          </div>
+          <div class="feature">
+            <h3>Quick check-in</h3>
+            <p>
+              Your details are ready before you land, so the front desk only needs to see your ID.
+            </p>
+          </div>
+          <div class="feature">
+            <h3>Open round the clock</h3>
+            <p>Our reception is staffed 24 hours, so late arrivals are welcome.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark">
+      <div class="container center reveal">
+        <h2>Ready for your stay?</h2>
+        <p>Fill in one short form and we will hold your room.</p>
+        <a class="btn" href="booking.html">Book a room</a>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="foot">
+          <div>
+            <h3>Archway Suites</h3>
+            <p>Comfortable rooms, warm service and a calm place to rest.</p>
+          </div>
+          <div>
+            <h3>Visit</h3>
+            <p>12 Your Street, Your City</p>
+            <p>(+234)808-3804-804</p>
+            <p>archwaysuites@gmail.com</p>
+          </div>
+          <div>
+            <h3>Pages</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="booking.html">Book a room</a>
+          </div>
+        </div>
+        <div class="copy">
+          &copy;
+          <span id="year"></span>
+          Archway Suites. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

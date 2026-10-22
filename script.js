@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
       made: new Date().toISOString(),
     };
 
-    // Saved in this browser only. Connect a server later to receive bookings centrally.
+    // bookings will be saved only on my browser for now
     try {
       const all = JSON.parse(localStorage.getItem("bookings") || "[]");
       all.push(booking);
